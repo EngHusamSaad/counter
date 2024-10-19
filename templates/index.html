@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/destroy_session" method="POST">
+        <h1>Counter</h1>
+        <h2><span name="time">{{ count }}</span> Times</h2>
+        <button>Rest Counter</button>
+    </form>
+
+    <form action="/add2" method="POST">
+        <button>Add +2</button>
+    </form>
+
+    <form action="/add/<times>" method="POST">
+        <label for="times">Enter Times You Need:</label>
+        <input type="text" name="times">
+        <button>Add times</button>
+    </form>
+
+
+
+
+    <style>
+        body {
+
+
+            text-align: center;
+        }
+
+        h2 span {
+            color: red;
+        }
+    </style>
+</body>
+
+</html>
